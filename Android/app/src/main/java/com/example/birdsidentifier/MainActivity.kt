@@ -39,11 +39,13 @@ class MainActivity : AppCompatActivity() {
 
 
         loadPhotoButton.setOnClickListener {
+            //Launch gallery to pick a photo for model
             val cameraIntent = Intent(Intent.ACTION_GET_CONTENT, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             startActivityForResult(cameraIntent, 5)
         }
 
         cameraButton.setOnClickListener {
+            // Launch camera to take a photo for model
             val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(cameraIntent, 4)
         }
@@ -55,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             if(requestCode == 4) run {
                 var image = data?.extras?.get("data") as Bitmap
                 val dimension = kotlin.math.min(image.width, image.height)
+                //Resizing Bitmap
                 image = ThumbnailUtils.extractThumbnail(image, dimension, dimension)
                 photoImageView.setImageBitmap(image)
                 image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false)
@@ -102,7 +105,6 @@ class MainActivity : AppCompatActivity() {
 
             val confidences = outputFeature0.floatArray
             // find the index of the class with the biggest confidence.
-            // find the index of the class with the biggest confidence.
             var maxPos = 0
             var maxConfidence = 0f
             for (i in confidences.indices) {
@@ -126,7 +128,6 @@ class MainActivity : AppCompatActivity() {
                 "SNOW GOOSE"
             )
             predictionTextView.text = birdNamesArray[maxPos]
-
             // Releases model resources if no longer used.
             model.close()
         }
