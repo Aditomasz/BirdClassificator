@@ -4,3 +4,4 @@ tensorflow
 pandas
 Pillow
 python-dotenv
+streamlit
