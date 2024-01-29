@@ -7,4 +7,4 @@ RUN mkdir ~/.streamlit
 RUN cp config.toml ~/.streamlit/config.toml
 WORKDIR /app
 ENTRYPOINT [ "streamlit", "run" ]
-CMD [ "app.py" ]
+CMD [ "App/app.py" ]
