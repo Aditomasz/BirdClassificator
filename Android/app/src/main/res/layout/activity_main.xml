@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/birdImageView"
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/prediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:visibility="visible"
+        android:layout_below="@id/birdImageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/takBirdPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_picture"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/prediction"
+        android:layout_centerInParent="true"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/loadBirdPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_gallery"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/takBirdPhoto"
+        android:layout_centerInParent="true"
+        tools:ignore="VisualLintButtonSize" />
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BirdsIdentifier</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="launch_gallery">Launch Gallery</string>
+</resources>
