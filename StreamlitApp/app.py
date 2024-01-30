@@ -44,7 +44,7 @@ def predict_image(photo_path):
 
 def main():
     """Main function for the Streamlit StreamlitApp"""
-    st.title("Photo Prediction StreamlitApp")
+    st.title("Birdwatch")
 
     uploaded_file = st.file_uploader("Choose a photo...", type=["jpg", "jpeg", "png"])
 
