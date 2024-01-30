@@ -12,83 +12,84 @@ https://www.kaggle.com/datasets/gpiosenka/100-bird-species
 
 ## Requirements: 
 
-Model requiements: 
+__Model requiements:__
 
-Visual Studio Code  
 
-Python 3.10 
+* Visual Studio Code  
 
-Libraries from requirements.txt 
+* Python 3.10 
 
-Streamlit App requirements: 
+* Libraries from requirements.txt 
 
-Internet Browser 
+__Streamlit App requirements:__ 
 
-Internet Connection 
+* Internet Browser 
 
-Mobile App requirements: 
+* Internet Connection 
 
-Android Studio  
+__Mobile App requirements:__ 
 
-Min Android API: 26 
+* Android Studio  
+
+* Min Android API: 26 
 
 ## Building Steps: 
 
-Model Building Steps: 
+__Model Building Steps:__
 
-Download repository from github 
+1. Download repository from github 
 
-Open folder with Visual Studio Code using Python 3.10 
+2. Open folder with Visual Studio Code using Python 3.10 
 
-Open Terminal and use command: “pip install -r .\requirments.txt” 
+3. Open Terminal and use command: “pip install -r .\requirments.txt” 
 
-Use command “python train.py” in Train folder to train model  
+4. Use command “python train.py” in Train folder to train model  
 
-Use command “python convert_to_tflite.py” in app folder (required for mobile app)  
+5. Use command “python convert_to_tflite.py” in app folder (required for mobile app)  
 
-Streamlit App Building Steps: 
+__Streamlit App Building Steps:__ 
 
-Building for localhost: 
+__Building for localhost:__
 
-Download repository from github 
+1. Download repository from github 
 
-Open folder with Visual Studio Code using Python 3.10 
+2. Open folder with Visual Studio Code using Python 3.10 
 
-Open Terminal and use command: “pip install -r .\requirments.txt” 
+3. Open Terminal and use command: “pip install -r .\requirments.txt” 
 
-Use command “streamlit run ./StreamlitApp/app.py” 
+4. Use command “streamlit run ./StreamlitApp/app.py” 
 
-Open link provided 
+5. Open link provided 
 
-Building for Microsoft Azure: 
+__Building for Microsoft Azure:__ 
 
-Download repository from github 
+1. Download repository from github 
 
-Open floder with Visual Studio COde using Python 3.10 
+2. Open floder with Visual Studio COde using Python 3.10 
 
-Open Terminal and use “pip install azure-cli” 
+3. Open Terminal and use “pip install azure-cli” 
 
-Then "az login” 
+4. Then "az login” 
 
-Now login into your azure account, create container registry REGNAME and resource group RESGROUPNAME 
+5. Now login into your azure account, create container registry REGNAME and resource group RESGROUPNAME 
 
-Use command az acr build --registry REGNAME --resource-group RESGROUPNAME  --image YOURNAME 
+6. Use command az acr build --registry REGNAME --resource-group RESGROUPNAME  --image YOURNAME 
 
-Now run app in azure and configure its port, as well as choose resource group and repository. 
+7. Now run app in azure and configure its port, as well as choose resource group and repository. 
 
-A link can be provided to the customer 
+8. A link can be provided to the customer 
 
-Mobile App Building Steps: 
+__Mobile App Building Steps:__
 
-Download repository from github  
+1. Download repository from github  
 
-Open android project with Android Studio  
+2. Open android project with Android Studio  
 
-Change to a device that has android 26 
+3. Change to a device that has android 26 
 
-Place .tflite file in ml folder (required if ml folder is empty) 
+4. Place .tflite file in ml folder (required if ml folder is empty) 
 
-Run app with Shift + F10 
+5. Run app with Shift + F10 
 
  
 
