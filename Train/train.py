@@ -12,7 +12,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 data_dir = os.getenv("DATA_DIR")
 csv_path = os.getenv("CSV_PATH")
-class_indices_file_path = 'class_indices.json'
+class_indices_file_path = '../Model/class_indices.json'
 
 train_dir = os.path.join(data_dir, "train")
 test_dir = os.path.join(data_dir, "test")
@@ -87,4 +87,4 @@ history = model.fit(
 test_loss, test_accuracy = model.evaluate(test_generator)
 print(f'Test accuracy: {test_accuracy}')
 
-model.save('BirdModel.h5'.format(1))
+model.save('../Model/BirdModel.h5'.format(1))
