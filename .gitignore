@@ -67,3 +67,6 @@ $RECYCLE.BIN/
 
 # Trained models
 *.h5
+
+# Installer files
+StreamlitApp/installer_files/
