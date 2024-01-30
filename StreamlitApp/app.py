@@ -14,10 +14,10 @@ from keras.preprocessing.image import load_img, img_to_array
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-CLASS_INDICE_FILE_PATH = '../model/class_indices.json'
+CLASS_INDICE_FILE_PATH = '../Train/class_indices.json'
 
 # Load the pre-trained model and class indices
-model = load_model('../model/BirdModel.h5')
+model = load_model('../Train/BirdModel.h5')
 with open(CLASS_INDICE_FILE_PATH, 'r', encoding="utf-8") as json_file:
     class_indices = json.load(json_file)
 
@@ -43,8 +43,8 @@ def predict_image(photo_path):
 
 
 def main():
-    """Main function for the Streamlit App"""
-    st.title("Photo Prediction App")
+    """Main function for the Streamlit StreamlitApp"""
+    st.title("Photo Prediction StreamlitApp")
 
     uploaded_file = st.file_uploader("Choose a photo...", type=["jpg", "jpeg", "png"])
 
