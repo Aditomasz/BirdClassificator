@@ -34,7 +34,7 @@ Min Android API: 26
 
 ## Building Steps: 
 
-###Model Building Steps: 
+Model Building Steps: 
 
 Download repository from github 
 
@@ -46,7 +46,7 @@ Use command “python train.py” in Train folder to train model
 
 Use command “python convert_to_tflite.py” in app folder (required for mobile app)  
 
-###Streamlit App Building Steps: 
+Streamlit App Building Steps: 
 
 Building for localhost: 
 
@@ -56,7 +56,7 @@ Open folder with Visual Studio Code using Python 3.10
 
 Open Terminal and use command: “pip install -r .\requirments.txt” 
 
-Use command “streamlit run ./App/app.py” 
+Use command “streamlit run ./StreamlitApp/app.py” 
 
 Open link provided 
 
@@ -78,7 +78,7 @@ Now run app in azure and configure its port, as well as choose resource group an
 
 A link can be provided to the customer 
 
-###Mobile App Building Steps: 
+Mobile App Building Steps: 
 
 Download repository from github  
 
