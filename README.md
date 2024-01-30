@@ -53,13 +53,9 @@ __Building for localhost:__
 
 1. Download repository from github 
 
-2. Open folder with Visual Studio Code using Python 3.10 
+2. Run StreamlitApp/run.bat
 
-3. Open Terminal and use command: “pip install -r .\requirments.txt” 
-
-4. Use command “streamlit run ./StreamlitApp/app.py” 
-
-5. Open link provided 
+3. Wait patiently, first time there might be a need to click enter
 
 __Building for Microsoft Azure:__ 
 
