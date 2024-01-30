@@ -3,7 +3,7 @@
   
 
 App for classifying birds using machine learning. 
-
+Available as a webApi based on Streamlit and as a mobile app.
   
 
 Data taken from: 
