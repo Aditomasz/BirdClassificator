@@ -5,3 +5,4 @@ pandas
 Pillow
 python-dotenv
 streamlit
+azure-cli
